@@ -25,11 +25,16 @@ public class Program {
 			System.out.println(obj);
 		}
 		
+		adicionaTeste(3, "findAll implementation");
+		list = sellerDao.findAll();
+		for (Seller obj : list) {
+			System.out.println(obj);
+		}
 		
 	}
 	
 	public static void adicionaTeste(int numTeste, String nomeTeste) {
-		System.out.printf("=== TESTE %d: %s ===\n", numTeste, nomeTeste);
+		System.out.printf("\n=== TESTE %d: %s ===\n", numTeste, nomeTeste);
 	}
 
 }
