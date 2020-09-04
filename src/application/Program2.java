@@ -38,6 +38,13 @@ public class Program2 {
 		depDao.deleteById(id);
 		System.out.println("Delete Completed");
 		scan.close();
+		
+		System.out.println("\n=== TESTE 5: Department Update ===");
+		dep = depDao.findById(13);
+		dep.setName("Almoxarifado");
+		depDao.update(dep);
+		System.out.println("Update Completed");
+		
 	}
 
 }
